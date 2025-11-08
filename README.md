@@ -1,4 +1,4 @@
-# Implementation tests of fair-gptq
+# Implementation tests for fair-gptq
 
 This repository is structured as follows: 
 - the code for fair-gptq is located in `gptq.py` and `config.py`.
