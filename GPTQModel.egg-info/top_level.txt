@@ -1,0 +1,7 @@
+gptqmodel
+gptqmodel_awq_kernels
+gptqmodel_awq_v2_kernels
+gptqmodel_exllamav2_kernels
+gptqmodel_ext
+gptqmodel_marlin_kernels
+gptqmodel_qqq_kernels

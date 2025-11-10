@@ -1,0 +1,102 @@
+[build-system]
+requires = [
+    "setuptools>=80.9",
+    "ninja>=1.13.0", # required for faster compilataion
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GPTQModel"
+dynamic = ["version"]
+description = "Production ready LLM model compression/quantization toolkit with hw accelerated inference support for both cpu/gpu via HF, vLLM, and SGLang."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "licenses/LICENSE.apache" }
+authors = [
+    { name = "ModelCloud", email = "qubitium@modelcloud.ai" },
+]
+keywords = ["gptq", "awq", "qqq", "autogptq", "autoawq", "eora", "gar", "quantization", "large-language-models", "transformers", "llm", "moe", "compression"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: C++",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Information Technology",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "accelerate>=1.10.1",
+    "numpy==2.2.6",
+    "torch>=2.8.0",
+    "safetensors>=0.6.2",
+    "transformers>=4.57.1",
+    "threadpoolctl>=3.6.0",
+    "packaging>=24.2",
+    "device-smi>=0.5.1",
+    "protobuf>=6.32.0",
+    "pillow>=11.3.0",
+    "pypcre>=0.2.3",
+    "hf_transfer>=0.1.9",
+    "huggingface_hub>=0.34.4",
+    "random_word>=1.0.13",
+    "tokenicer>=0.0.5",
+    "logbar>=0.1.7",
+    "maturin>=1.9.4", # required by safetensors and hf_transfer
+    "datasets>=3.6.0",
+    "pyarrow>=21.0",
+    "dill>=0.3.8", # datasets requirements
+    "pypcre>=0.2.4",
+    "torchao>=0.14.1", # fix bad transformers 4.57.1 breaking torchao compat
+    # "cython>=3.1.4", # required by hf-xet/hf-transfer
+# "flash-attn>=2.8.3", <-- install for lower vram usage
+]
+
+[project.urls]
+Homepage = "https://github.com/ModelCloud/GPTQModel"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.3.5",
+    "pytest-timeout>=2.3.1",
+    "parameterized",
+]
+quality = [
+    "ruff==0.13.0",
+    # "isort==6.0.1",
+]
+vllm = [
+    "vllm>=0.10.2",
+    "flashinfer-python>=0.3.1",
+]
+sglang = [
+    "sglang[srt]>=0.4.6",
+    "flashinfer-python>=0.3.1",
+]
+bitblas = [
+    "bitblas==0.1.0.post1",
+]
+hf = [
+    "optimum>=1.21.2",
+]
+eval = [
+    "lm_eval>=0.4.7",
+    "evalplus>=0.3.1",
+]
+triton = [
+    "triton>=3.4.0",
+]
+openai = [
+    "uvicorn",
+    "fastapi",
+    "pydantic",
+]
+mlx = [
+    "mlx_lm>=0.24.0",
+]
