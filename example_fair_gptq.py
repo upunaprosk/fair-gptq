@@ -63,7 +63,7 @@ for l in ["0,1", "31,30"]:
         )
 
         model = GPTQModel.load(m, quant_config)
-        model.quantize(examples, batch_size=2,ignore_bias="k_proj,q_proj,v_proj,fc1")
+        model.quantize(examples, batch_size=2,ignore_bias="k_proj,q_proj,v_proj,fc1") # for llama: k_proj,q_proj,v_proj,up_proj,gate_proj
         model.save(quant_path)
 
         os.makedirs("logs", exist_ok=True)
