@@ -197,7 +197,7 @@ class BaseGPTQModel(nn.Module):
         # Setting a fixed calibration_dataset_concat_size may improve the performance of the quantized model.
         calibration_dataset_concat_size: Optional[int] = None,
         batch_size: int = 1,
-        calibration_data_min_length: int = 10,
+        calibration_data_min_length: int = 0,
     ):
         if isinstance(calibration_dataset[0], (str, list)) or (isinstance(calibration_dataset[0], list) and all(isinstance(x, int) for x in calibration_dataset[0])):
             if self.tokenizer is None:
