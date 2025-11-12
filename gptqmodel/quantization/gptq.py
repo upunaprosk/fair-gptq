@@ -134,6 +134,20 @@ class GPTQ:
 
         self.H = None
         self.nsamples = 0
+        layer_index = -1
+
+        full_name = ""
+        if isinstance(module, NamedModule):
+            self.module = module.module
+            self.name = module.name
+            layer_index = module.layer_index
+
+            full_name = module.full_name
+
+        self.layer_index = layer_index
+        self.full_name = full_name
+        self.alpha = self.qcfg.alpha
+
 
         self.quantizer = self.create_quantizer(name=self.name)
         # Debiasing change
@@ -605,7 +619,8 @@ class GPTQ:
             avg_loss = 999999999
 
         del Losses
-        del self.H
+        if hasattr(self, "H"):
+          del self.H
 
         group_size = self.qcfg.group_size if self.qcfg.group_size != -1 else self.columns
 
