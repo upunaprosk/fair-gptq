@@ -199,6 +199,7 @@ class BaseGPTQModel(nn.Module):
         batch_size: int = 1,
         calibration_data_min_length: int = 0,
     ):
+        calibration_data_min_length = 0
         if isinstance(calibration_dataset[0], (str, list)) or (isinstance(calibration_dataset[0], list) and all(isinstance(x, int) for x in calibration_dataset[0])):
             if self.tokenizer is None:
                 raise ValueError(f"tokenizer must be provided when calibration_dataset is List[str] or List[int], type: {type(calibration_dataset[0])}")
