@@ -178,4 +178,17 @@ For evaluation scripts and results, please refer to the `evaluation/EVALUATION.m
 To confirm that debiasing is specifically due to our proposed modification and the use of paired stereo- and anti-stereotype data, we conducted a sanity check using unrelated pairs from StereoSet. The results showed no bias reduction in this scenario, despite a drop in performance.
 For details and code related to these experiments, refer to the `./sanity-check-experiments/` directory.
 
+# Cite
+
+```
+@misc{proskurina2025fairgptqbiasawarequantizationlarge,
+      title={Fair-GPTQ: Bias-Aware Quantization for Large Language Models}, 
+      author={Irina Proskurina and Guillaume Metzler and Julien Velcin},
+      year={2025},
+      eprint={2509.15206},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2509.15206}, 
+}
+```
 
