@@ -1,11 +1,27 @@
-# Implementation tests for fair-gptq
+# [Fair-GPTQ: Bias-Aware Quantization for Large Language Models](https://arxiv.org/abs/2509.15206)
+
+<a href="https://huggingface.co/papers/2509.15206" target="_blank">
+  <img alt="HF" src="https://img.shields.io/badge/📚HF-Papers" />
+</a>
+<a href="https://arxiv.org/abs/2509.15206" target="_blank">
+  <img alt="Paper" src="https://img.shields.io/badge/📜-Paper-purple" />
+</a>
+<a href="https://github.com/ModelCloud/GPTQModel" target="_blank">
+  <img alt="GPTQModel" src="https://img.shields.io/badge/⚙️-GPTQModel-blue" />
+</a>
+
+This repository contains the implementation, evaluation code, and sanity-check experiments for the paper **[Fair-GPTQ: Bias-Aware Quantization for Large Language Models](https://arxiv.org/abs/2509.15206)**
+
+Authors: *Irina Proskurina, Guillaume Metzler, Julien Velcin*
+
+
+  
+# Fair-GPTQ Implementation
 
 This repository is structured as follows: 
 - the code for fair-gptq is located in `gptq.py` and `config.py`.
 - `./evaluation/` directory contains code for model evaluation.
 - `./sanity-check/` directory contains code for sanity check experiments.
-  
-# Fair-GPTQ Code
 
 We use the GPTQModel code and integrate a fairness term directly into the package's codebase.
 See `example_fair_gptq.py` for a full usage example.
