@@ -181,10 +181,10 @@ For details and code related to these experiments, refer to the `./sanity-check-
 # Cite
 
 ```
-@misc{proskurina2025fairgptqbiasawarequantizationlarge,
+@misc{proskurina2026fairgptqbiasawarequantizationlarge,
       title={Fair-GPTQ: Bias-Aware Quantization for Large Language Models}, 
       author={Irina Proskurina and Guillaume Metzler and Julien Velcin},
-      year={2025},
+      year={2026},
       eprint={2509.15206},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
