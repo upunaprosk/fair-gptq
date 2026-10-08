@@ -10,7 +10,7 @@
   <img alt="GPTQModel" src="https://img.shields.io/badge/⚙️-GPTQModel-blue" />
 </a>
 
-This repository contains the implementation, evaluation code, and sanity-check experiments for the paper **[Fair-GPTQ: Bias-Aware Quantization for Large Language Models](https://arxiv.org/abs/2509.15206)**
+This repository contains the implementation, evaluation code, and sanity-check experiments for the TACL paper **[Fair-GPTQ: Bias-Aware Quantization for Large Language Models](https://arxiv.org/abs/2509.15206)**
 
 Authors: *Irina Proskurina, Guillaume Metzler, Julien Velcin*
 
