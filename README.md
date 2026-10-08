@@ -1,18 +1,29 @@
 # [Fair-GPTQ: Bias-Aware Quantization for Large Language Models](https://arxiv.org/abs/2509.15206)
 
-<a href="https://huggingface.co/papers/2509.15206" target="_blank">
-  <img alt="HF" src="https://img.shields.io/badge/📚HF-Papers" />
-</a>
-<a href="https://arxiv.org/abs/2509.15206" target="_blank">
-  <img alt="Paper" src="https://img.shields.io/badge/📜-Paper-purple" />
-</a>
-<a href="https://github.com/ModelCloud/GPTQModel" target="_blank">
-  <img alt="GPTQModel" src="https://img.shields.io/badge/⚙️-GPTQModel-blue" />
-</a>
+<p align="left">
+  <a href="https://arxiv.org/abs/2509.15206" target="_blank">
+    <img alt="Paper" src="https://img.shields.io/badge/📄_Paper-arXiv-b31b1b" />
+  </a>
+  <a href="https://huggingface.co/papers/2509.15206" target="_blank">
+    <img alt="Hugging Face Papers" src="https://img.shields.io/badge/🤗_Hugging_Face-Papers-yellow" />
+  </a>
+  <a href="https://github.com/ModelCloud/GPTQModel" target="_blank">
+    <img alt="GPTQModel" src="https://img.shields.io/badge/⚙️_Integration-GPTQModel-blue" />
+  </a>
+  <img alt="TACL" src="https://img.shields.io/badge/🎉_Accepted_at-TACL-8A2BE2" />
+</p>
 
-This repository contains the implementation, evaluation code, and sanity-check experiments for the TACL paper **[Fair-GPTQ: Bias-Aware Quantization for Large Language Models](https://arxiv.org/abs/2509.15206)**
+> 🎉 **News:** Fair-GPTQ has been accepted to **Transactions of the Association for Computational Linguistics (TACL)**.
 
-Authors: *Irina Proskurina, Guillaume Metzler, Julien Velcin*
+**Fair-GPTQ** is a bias-aware post-training quantization method for large language models, designed to improve low-bit quantization by explicitly accounting for bias introduced during quantization.
+
+This repository contains the official implementation, evaluation pipeline, and sanity-check experiments accompanying our TACL paper:
+
+**[Fair-GPTQ: Bias-Aware Quantization for Large Language Models](https://arxiv.org/abs/2509.15206)**
+
+**Authors:** *Irina Proskurina, Guillaume Metzler, Julien Velcin*
+
+⭐ **If you find Fair-GPTQ useful for your research, please consider starring the repository. It helps others discover the project.**
 
 
   
@@ -197,7 +208,7 @@ For details and code related to these experiments, refer to the `./sanity-check-
 # Cite
 
 ```
-@misc{proskurina2026fairgptqbiasawarequantizationlarge,
+@article{proskurina2026fairgptqbiasawarequantizationlarge,
       title={Fair-GPTQ: Bias-Aware Quantization for Large Language Models}, 
       author={Irina Proskurina and Guillaume Metzler and Julien Velcin},
       year={2026},
