@@ -1,19 +1,27 @@
 # [Fair-GPTQ: Bias-Aware Quantization for Large Language Models](https://arxiv.org/abs/2509.15206)
 
 <p align="left">
-  <a href="https://arxiv.org/abs/2509.15206" target="_blank">
-    <img alt="Paper" src="https://img.shields.io/badge/📄_Paper-arXiv-b31b1b" />
+  <a href="https://fair-gptq.github.io/">
+    <img alt="Project Website" src="https://img.shields.io/badge/🌐_Project-Website-555555" />
   </a>
-  <a href="https://huggingface.co/papers/2509.15206" target="_blank">
+  <a href="https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.816/139652/Fair-GPTQ-Bias-Aware-Quantization-for-Large">
+    <img alt="MIT Press" src="https://img.shields.io/badge/📖_Paper-MIT_Press-00629B" />
+  </a>
+  <a href="https://arxiv.org/abs/2509.15206">
+    <img alt="arXiv" src="https://img.shields.io/badge/📄_Paper-arXiv-b31b1b" />
+  </a>
+  <a href="https://huggingface.co/papers/2509.15206">
     <img alt="Hugging Face Papers" src="https://img.shields.io/badge/🤗_Hugging_Face-Papers-yellow" />
   </a>
-  <a href="https://github.com/ModelCloud/GPTQModel" target="_blank">
+  <a href="https://github.com/ModelCloud/GPTQModel">
     <img alt="GPTQModel" src="https://img.shields.io/badge/⚙️_Integration-GPTQModel-blue" />
   </a>
-  <img alt="TACL" src="https://img.shields.io/badge/🎉_Accepted_at-TACL-8A2BE2" />
+  <img alt="TACL 2026" src="https://img.shields.io/badge/Published_in-TACL_2026-8A2BE2" />
 </p>
 
-> 🎉 **News:** Fair-GPTQ has been accepted to **Transactions of the Association for Computational Linguistics (TACL)**.
+> 🎉 **News:** Fair-GPTQ is published in **Transactions of the Association for Computational Linguistics (TACL), Volume 14, 2026**, by MIT Press!  
+> **Paper:** https://doi.org/10.1162/tacl.a.816    
+> **Project website:** https://fair-gptq.github.io  
 
 **Fair-GPTQ** is a bias-aware post-training quantization method for large language models, designed to improve low-bit quantization by explicitly accounting for bias introduced during quantization.
 
@@ -208,14 +216,19 @@ For details and code related to these experiments, refer to the `./sanity-check-
 # Cite
 
 ```
-@article{proskurina2026fairgptqbiasawarequantizationlarge,
-      title={Fair-GPTQ: Bias-Aware Quantization for Large Language Models}, 
-      author={Irina Proskurina and Guillaume Metzler and Julien Velcin},
-      year={2026},
-      eprint={2509.15206},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2509.15206}, 
+@article{10.1162/TACL.a.816,
+    author = {Proskurina, Irina and Metzler, Guillaume and Velcin, Julien},
+    title = {Fair-GPTQ: Bias-Aware Quantization for Large Language Models},
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume = {14},
+    pages = {2574-2602},
+    year = {2026},
+    month = {10},
+    abstract = {The high memory demands of generative language models have drawn attention to quantization, which reduces memory usage by mapping model weights to lower-precision integers. However, recent empirical studies show that, while efficient, quantization can increase the likelihood of generating biased outputs and degrade performance on fairness benchmarks. In this work, we draw new links between quantization and model fairness by adding explicit group-fairness constraints to the quantization objective and introduce Fair-GPTQ, the first quantization method explicitly designed to reduce unfairness in large language models. The added constraints guide the learning of the rounding operation toward less-biased text generation for protected groups. Specifically, we focus on stereotype generation involving occupational bias and discriminatory language spanning gender, race, and religion. Fair-GPTQ has minimal impact on performance, preserving at least 90\% of baseline accuracy on zero-shot benchmarks, reduces unfairness relative to a half-precision model, and retains the memory and speed benefits of 4-bit quantization.},
+    issn = {2307-387X},
+    doi = {10.1162/TACL.a.816},
+    url = {https://doi.org/10.1162/TACL.a.816},
+    eprint = {https://direct.mit.edu/tacl/article-pdf/doi/10.1162/TACL.a.816/2637801/tacl.a.816.pdf},
 }
 ```
 
