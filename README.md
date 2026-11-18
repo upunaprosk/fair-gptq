@@ -224,7 +224,6 @@ For details and code related to these experiments, refer to the `./sanity-check-
     pages = {2574-2602},
     year = {2026},
     month = {10},
-    abstract = {The high memory demands of generative language models have drawn attention to quantization, which reduces memory usage by mapping model weights to lower-precision integers. However, recent empirical studies show that, while efficient, quantization can increase the likelihood of generating biased outputs and degrade performance on fairness benchmarks. In this work, we draw new links between quantization and model fairness by adding explicit group-fairness constraints to the quantization objective and introduce Fair-GPTQ, the first quantization method explicitly designed to reduce unfairness in large language models. The added constraints guide the learning of the rounding operation toward less-biased text generation for protected groups. Specifically, we focus on stereotype generation involving occupational bias and discriminatory language spanning gender, race, and religion. Fair-GPTQ has minimal impact on performance, preserving at least 90\% of baseline accuracy on zero-shot benchmarks, reduces unfairness relative to a half-precision model, and retains the memory and speed benefits of 4-bit quantization.},
     issn = {2307-387X},
     doi = {10.1162/TACL.a.816},
     url = {https://doi.org/10.1162/TACL.a.816},
